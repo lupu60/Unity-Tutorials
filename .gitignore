@@ -1,0 +1,32 @@
+# =============== #
+# Unity generated #
+# =============== #
+/Roll-a-Ball/[Tt]emp/
+/Roll-a-Ball/[Oo]bj/
+/Roll-a-Ball/[Bb]uild
+/Roll-a-Ball/[Ll]ibrary/
+/Roll-a-Ball/sysinfo.txt
+
+# ===================================== #
+# Visual Studio / MonoDevelop generated #
+# ===================================== #
+[Ee]xported[Oo]bj/
+/Roll-a-Ball/*.userprefs
+/Roll-a-Ball/*.csproj
+/Roll-a-Ball/*.pidb
+/Roll-a-Ball/*.suo
+/Roll-a-Ball/*.sln*
+/Roll-a-Ball/*.user
+/Roll-a-Ball/*.unityproj
+/Roll-a-Ball/*.booproj
+
+# ============ #
+# OS generated #
+# ============ #
+.DS_Store*
+._*
+.Spotlight-V100
+.Trashes
+Icon?
+ehthumbs.db
+[Tt]humbs.db
