@@ -1,16 +1,34 @@
-# =============== #
-# Unity generated #
-# =============== #
+# ============================== #
+#         Unity generated        #
+# ============================== #
+
+# ================ #
+# Roll-a-Ball      #
+# ================ #
 /Roll-a-Ball/[Tt]emp/
 /Roll-a-Ball/[Oo]bj/
 /Roll-a-Ball/[Bb]uild
 /Roll-a-Ball/[Ll]ibrary/
 /Roll-a-Ball/sysinfo.txt
 
+# ================ #
+# Survival-Shooter #
+# ================ #
+/Survival-Shooter/[Tt]emp/
+/Survival-Shooter/[Oo]bj/
+/Survival-Shooter/[Bb]uild
+/Survival-Shooter/[Ll]ibrary/
+/Survival-Shooter/sysinfo.txt
+
+
 # ===================================== #
 # Visual Studio / MonoDevelop generated #
 # ===================================== #
-[Ee]xported[Oo]bj/
+
+# ================ #
+# Roll-a-Ball      #
+# ================ #
+/Roll-a-Ball/[Ee]xported[Oo]bj/
 /Roll-a-Ball/*.userprefs
 /Roll-a-Ball/*.csproj
 /Roll-a-Ball/*.pidb
@@ -19,6 +37,20 @@
 /Roll-a-Ball/*.user
 /Roll-a-Ball/*.unityproj
 /Roll-a-Ball/*.booproj
+
+# ================ #
+# Survival-Shooter #
+# ================ #
+/Survival-Shooter/[Ee]xported[Oo]bj/
+/Survival-Shooter/*.userprefs
+/Survival-Shooter/*.csproj
+/Survival-Shooter/*.pidb
+/Survival-Shooter/*.suo
+/Survival-Shooter/*.sln*
+/Survival-Shooter/*.user
+/Survival-Shooter/*.unityproj
+/Survival-Shooter/*.booproj
+
 
 # ============ #
 # OS generated #
