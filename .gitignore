@@ -21,6 +21,15 @@
 /Shmup/sysinfo.txt
 
 # ================ #
+# Space-Shooter    #
+# ================ #
+/Space-Shooter/[Tt]emp/
+/Space-Shooter/[Oo]bj/
+/Space-Shooter/[Bb]uild
+/Space-Shooter/[Ll]ibrary/
+/Space-Shooter/sysinfo.txt
+
+# ================ #
 # Survival-Shooter #
 # ================ #
 /Survival-Shooter/[Tt]emp/
@@ -59,6 +68,19 @@
 /Shmup/*.user
 /Shmup/*.unityproj
 /Shmup/*.booproj
+
+# ================ #
+# Survival-Shooter #
+# ================ #
+/Space-Shooter/[Ee]xported[Oo]bj/
+/Space-Shooter/*.userprefs
+/Space-Shooter/*.csproj
+/Space-Shooter/*.pidb
+/Space-Shooter/*.suo
+/Space-Shooter/*.sln*
+/Space-Shooter/*.user
+/Space-Shooter/*.unityproj
+/Space-Shooter/*.booproj
 
 # ================ #
 # Survival-Shooter #
