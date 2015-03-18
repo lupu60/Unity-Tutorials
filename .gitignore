@@ -12,6 +12,15 @@
 /Roll-a-Ball/sysinfo.txt
 
 # ================ #
+# Shmup            #
+# ================ #
+/Shmup/[Tt]emp/
+/Shmup/[Oo]bj/
+/Shmup/[Bb]uild
+/Shmup/[Ll]ibrary/
+/Shmup/sysinfo.txt
+
+# ================ #
 # Survival-Shooter #
 # ================ #
 /Survival-Shooter/[Tt]emp/
@@ -37,6 +46,19 @@
 /Roll-a-Ball/*.user
 /Roll-a-Ball/*.unityproj
 /Roll-a-Ball/*.booproj
+
+# ================ #
+# Shmup            #
+# ================ #
+/Shmup/[Ee]xported[Oo]bj/
+/Shmup/*.userprefs
+/Shmup/*.csproj
+/Shmup/*.pidb
+/Shmup/*.suo
+/Shmup/*.sln*
+/Shmup/*.user
+/Shmup/*.unityproj
+/Shmup/*.booproj
 
 # ================ #
 # Survival-Shooter #
