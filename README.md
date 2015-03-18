@@ -4,6 +4,7 @@
 Unity-Tutorials: 
 * [Roll-a-Ball]
 * [Shoot'Em Up]
+* [Space-Shooter]
 * [Survival Shooter]
 * [Stealth]
 
@@ -15,3 +16,4 @@ Unity-Tutorials:
 [Survival Shooter]:http://unity3d.com/learn/tutorials/projects/survival-shooter
 [Stealth]:http://unity3d.com/learn/tutorials/projects/stealth
 [Unity-Tutorials]:http://unity3d.com/learn/tutorials/modules
+[Space-Shooter]:http://unity3d.com/learn/tutorials/projects/space-shooter/ending-the-game
