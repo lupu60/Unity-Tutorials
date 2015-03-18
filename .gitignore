@@ -38,6 +38,15 @@
 /Survival-Shooter/[Ll]ibrary/
 /Survival-Shooter/sysinfo.txt
 
+# ================ #
+# Stealth          #
+# ================ #
+/Stealth/[Tt]emp/
+/Stealth/[Oo]bj/
+/Stealth/[Bb]uild
+/Stealth/[Ll]ibrary/
+/Stealth/sysinfo.txt
+
 
 # ===================================== #
 # Visual Studio / MonoDevelop generated #
@@ -94,6 +103,19 @@
 /Survival-Shooter/*.user
 /Survival-Shooter/*.unityproj
 /Survival-Shooter/*.booproj
+
+# ================ #
+# Stealth          #
+# ================ #
+/Stealth/[Ee]xported[Oo]bj/
+/Stealth/*.userprefs
+/Stealth/*.csproj
+/Stealth/*.pidb
+/Stealth/*.suo
+/Stealth/*.sln*
+/Stealth/*.user
+/Stealth/*.unityproj
+/Stealth/*.booproj
 
 
 # ============ #
