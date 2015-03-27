@@ -47,6 +47,16 @@
 /Stealth/[Ll]ibrary/
 /Stealth/sysinfo.txt
 
+# ================ #
+# Stealth_ch12          #
+# ================ #
+/Stealth_ch12/[Tt]emp/
+/Stealth_ch12/[Oo]bj/
+/Stealth_ch12/[Bb]uild
+/Stealth_ch12/[Ll]ibrary/
+/Stealth_ch12/sysinfo.txt
+
+
 
 # ===================================== #
 # Visual Studio / MonoDevelop generated #
@@ -117,6 +127,18 @@
 /Stealth/*.unityproj
 /Stealth/*.booproj
 
+# ================ #
+# Stealth_ch12          #
+# ================ #
+/Stealth_ch12/[Ee]xported[Oo]bj/
+/Stealth_ch12/*.userprefs
+/Stealth_ch12/*.csproj
+/Stealth_ch12/*.pidb
+/Stealth_ch12/*.suo
+/Stealth_ch12/*.sln*
+/Stealth_ch12/*.user
+/Stealth_ch12/*.unityproj
+/Stealth_ch12/*.booproj
 
 # ============ #
 # OS generated #
