@@ -8,7 +8,7 @@ public var fadeSpeed : float = 7f;                                      // How f
 public var musicFadeSpeed : float = 1f;                                 // The speed at which the
 
 
-private var alarm : AlarmLight;                                     // Reference to the AlarmLight script.
+public var alarm : AlarmLight;                                     // Reference to the AlarmLight script.
 private var mainLight : Light;                                          // Reference to the main light.
 private var panicAudio : AudioSource;                                       // Reference to the AudioSource of the panic msuic.
 private var sirens : AudioSource[];                                     // Reference to the AudioSources of the megaphones.

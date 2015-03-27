@@ -1,7 +1,7 @@
 fileFormatVersion: 2
 guid: 3974b181f8f59754ca61fd0985a39b73
 ModelImporter:
-  serializedVersion: 15
+  serializedVersion: 16
   fileIDToRecycleName:
     100000: //RootNode
     100002: char_robotGuard_body
@@ -126,13 +126,16 @@ ModelImporter:
   animations:
     legacyGenerateAnimations: 4
     bakeSimulation: 0
+    optimizeGameObjects: 0
     animationCompression: 1
     animationRotationError: .5
     animationPositionError: .5
     animationScaleError: .5
     animationWrapMode: 0
+    extraExposedTransformPaths: []
     clipAnimations:
-    - name: Gripped
+    - serializedVersion: 16
+      name: Gripped
       takeName: Take 001
       firstFrame: 1
       lastFrame: 2
@@ -141,6 +144,7 @@ ModelImporter:
       level: 0
       cycleOffset: 0
       loop: 0
+      loopTime: 0
       loopBlend: 0
       loopBlendOrientation: 0
       loopBlendPositionY: 0
@@ -152,7 +156,10 @@ ModelImporter:
       mirror: 0
       bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
       curves: []
+      events: []
       transformMask: []
+      maskType: 0
+      maskSource: {instanceID: 0}
     isReadable: 1
   meshes:
     lODScreenPercentages: []
@@ -184,8 +191,6 @@ ModelImporter:
         min: {x: -40, y: -40, z: -40}
         max: {x: 40, y: 40, z: 40}
         value: {x: .0874271616, y: 0, z: .0437135808}
-        preQ: {x: .51864922, y: .480627686, z: -.51864922, w: -.480627656}
-        postQ: {x: .99973464, y: -.023033157, z: -5.96046448e-08, w: -1.49011612e-08}
         length: .109283991
         modified: 1
     - boneName: char_robotGuard_LeftUpLeg
@@ -194,8 +199,6 @@ ModelImporter:
         min: {x: -60.0000038, y: -60.0000038, z: -90}
         max: {x: 60.0000038, y: 60.0000038, z: 50}
         value: {x: .303077132, y: 0, z: .151538566}
-        preQ: {x: .0954227373, y: -.0165536851, z: -.980652332, w: -.170121297}
-        postQ: {x: -.00267294073, y: .995295584, z: -.000260114699, w: -.0968476087}
         length: .378846556
         modified: 1
     - boneName: char_robotGuard_RightUpLeg
@@ -204,8 +207,6 @@ ModelImporter:
         min: {x: -60.0000038, y: -60.0000038, z: -90}
         max: {x: 60.0000038, y: 60.0000038, z: 50}
         value: {x: .303077281, y: 0, z: .15153864}
-        preQ: {x: -.095422931, y: .0165537689, z: -.980652273, w: -.170121342}
-        postQ: {x: -.00026011467, y: -.0968477875, z: -.00267310441, w: .995295525}
         length: .378846735
         modified: 1
     - boneName: char_robotGuard_LeftLeg
@@ -214,8 +215,6 @@ ModelImporter:
         min: {x: -90, y: 0, z: -80}
         max: {x: 90, y: 0, z: 80}
         value: {x: .347239763, y: 0, z: .173619881}
-        preQ: {x: .628217041, y: .778037965, z: -4.28081659e-09, w: 4.56620448e-08}
-        postQ: {x: 5.96046448e-08, y: .99999994, z: -0, w: 0}
         length: .434049845
         modified: 1
     - boneName: char_robotGuard_RightLeg
@@ -224,8 +223,6 @@ ModelImporter:
         min: {x: -90, y: 0, z: -80}
         max: {x: 90, y: 0, z: 80}
         value: {x: .347239494, y: 0, z: .173619747}
-        preQ: {x: 4.56620448e-08, y: -2.8538778e-09, z: .628217041, w: .778037965}
-        postQ: {x: 2.98023224e-08, y: -7.4505806e-08, z: 1.1920929e-07, w: .99999994}
         length: .434049517
         modified: 1
     - boneName: char_robotGuard_LeftFoot
@@ -234,8 +231,6 @@ ModelImporter:
         min: {x: 0, y: -30.0000019, z: -50}
         max: {x: 0, y: 30.0000019, z: 50}
         value: {x: .090716742, y: 0, z: .045358371}
-        preQ: {x: -.0589207858, y: .998262584, z: -5.96046448e-08, w: 5.96046448e-08}
-        postQ: {x: -0, y: -5.21540677e-08, z: -.89687264, w: .442288786}
         length: .113395959
         modified: 1
     - boneName: char_robotGuard_RightFoot
@@ -244,8 +239,6 @@ ModelImporter:
         min: {x: 0, y: -30.0000019, z: -50}
         max: {x: 0, y: 30.0000019, z: 50}
         value: {x: .0907169059, y: 0, z: .0453584529}
-        preQ: {x: 4.470348e-08, y: -1.49011603e-08, z: -.0589208417, w: .998262584}
-        postQ: {x: -2.98023224e-08, y: -2.98023224e-08, z: -.442288727, w: -.89687264}
         length: .113396168
         modified: 1
     - boneName: char_robotGuard_Spine
@@ -254,8 +247,6 @@ ModelImporter:
         min: {x: -40, y: -40, z: -40}
         max: {x: 40, y: 40, z: 40}
         value: {x: .316319525, y: 0, z: .158159763}
-        preQ: {x: .999597371, y: -.0283691119, z: -5.96046412e-08, w: -1.49011603e-08}
-        postQ: {x: 2.98023224e-08, y: -1.49011612e-08, z: -.99999994, w: -7.59959278e-07}
         length: .395399541
         modified: 1
     - boneName: char_robotGuard_Neck
@@ -264,8 +255,6 @@ ModelImporter:
         min: {x: -40, y: -40, z: -40}
         max: {x: 40, y: 40, z: 40}
         value: {x: .0636743754, y: 0, z: .0318371877}
-        preQ: {x: -2.98023206e-08, y: 2.98023206e-08, z: .988499463, w: .151224211}
-        postQ: {x: -2.98023206e-08, y: 1.49011603e-08, z: .99999994, w: 4.91738263e-07}
         length: .0795930028
         modified: 1
     - boneName: char_robotGuard_Head
@@ -274,8 +263,6 @@ ModelImporter:
         min: {x: -40, y: -40, z: -40}
         max: {x: 40, y: 40, z: 40}
         value: {x: .0636743754, y: 0, z: .0318371877}
-        preQ: {x: -5.96046412e-08, y: 5.96046412e-08, z: .99412632, w: -.108224548}
-        postQ: {x: -8.94069672e-08, y: 5.96046448e-08, z: .994126439, w: -.108224541}
         length: .0795930028
         modified: 1
     - boneName: char_robotGuard_LeftShoulder
@@ -284,8 +271,6 @@ ModelImporter:
         min: {x: 0, y: -15.000001, z: -15.000001}
         max: {x: 0, y: 15.000001, z: 30.0000019}
         value: {x: .0508682095, y: 0, z: .0254341047}
-        preQ: {x: .447831899, y: .410583138, z: .585458279, w: -.536755741}
-        postQ: {x: -1.60932541e-06, y: 7.62633931e-07, z: .99999994, w: 2.81219172e-06}
         length: .0635852814
         modified: 1
     - boneName: char_robotGuard_RightShoulder
@@ -294,8 +279,6 @@ ModelImporter:
         min: {x: 0, y: -15.000001, z: -15.000001}
         max: {x: 0, y: 15.000001, z: 30.0000019}
         value: {x: .0508682765, y: 0, z: .0254341383}
-        preQ: {x: -.536750972, y: .585460067, z: .410589188, w: .447829515}
-        postQ: {x: -.99999994, y: 1.02522672e-05, z: 1.40070904e-06, w: -2.78841503e-06}
         length: .0635853633
         modified: 1
     - boneName: char_robotGuard_LeftArm
@@ -304,8 +287,6 @@ ModelImporter:
         min: {x: -90, y: -100, z: -60.0000038}
         max: {x: 90, y: 100, z: 100}
         value: {x: .19278203, y: 0, z: .0963910148}
-        preQ: {x: .354693145, y: -.0543510802, z: .86638546, w: -.347296506}
-        postQ: {x: .00249725441, y: .0693874657, z: .994875371, w: .0734979212}
         length: .2409776
         modified: 1
     - boneName: char_robotGuard_RightArm
@@ -314,8 +295,6 @@ ModelImporter:
         min: {x: -90, y: -100, z: -60.0000038}
         max: {x: 90, y: 100, z: 100}
         value: {x: .192784712, y: 0, z: .0963923559}
-        preQ: {x: -.86638552, y: -.347296149, z: .354693651, w: .0543506257}
-        postQ: {x: -.99751097, y: -.00901998859, z: .0257932618, w: .0650004745}
         length: .240980953
         modified: 1
     - boneName: char_robotGuard_LeftForeArm
@@ -324,8 +303,6 @@ ModelImporter:
         min: {x: -90, y: 0, z: -80}
         max: {x: 90, y: 0, z: 80}
         value: {x: .246205896, y: 0, z: .123102948}
-        preQ: {x: .543181002, y: .505753279, z: .540128946, w: -.396772534}
-        postQ: {x: -.298402876, y: .678973973, z: .571346581, w: -.351444155}
         length: .307757437
         modified: 1
     - boneName: char_robotGuard_RightForeArm
@@ -334,8 +311,6 @@ ModelImporter:
         min: {x: -90, y: 0, z: -80}
         max: {x: 90, y: 0, z: 80}
         value: {x: .246207401, y: 0, z: .123103701}
-        preQ: {x: -.559739113, y: -.518505037, z: .452037841, w: -.462067455}
-        postQ: {x: -.0480927527, y: -.00888540223, z: -.0544677787, w: .997317016}
         length: .307759315
         modified: 1
     - boneName: char_robotGuard_LeftHand
@@ -344,8 +319,6 @@ ModelImporter:
         min: {x: 0, y: -40, z: -80}
         max: {x: 0, y: 40, z: 80}
         value: {x: .123102948, y: 0, z: .061551474}
-        preQ: {x: .0370391719, y: .0770019367, z: .884032428, w: -.459549069}
-        postQ: {x: .0600306131, y: .0523984283, z: .996817887, w: .00216776459}
         length: .153878719
         modified: 1
     - boneName: char_robotGuard_RightHand
@@ -354,8 +327,6 @@ ModelImporter:
         min: {x: 0, y: -40, z: -80}
         max: {x: 0, y: 40, z: 80}
         value: {x: .123103701, y: 0, z: .0615518503}
-        preQ: {x: .67045182, y: -.044764705, z: -.0322770849, w: .739897609}
-        postQ: {x: -.996171653, y: .0115297409, z: .0695180595, w: -.0517323874}
         length: .153879657
         modified: 1
     - boneName: char_robotGuard_LeftToeBase
@@ -364,8 +335,6 @@ ModelImporter:
         min: {x: 0, y: 0, z: -50}
         max: {x: 0, y: 0, z: 50}
         value: {x: .0551487766, y: 0, z: .0275743883}
-        preQ: {x: -0, y: 2.98023259e-08, z: .94693011, w: .321439326}
-        postQ: {x: .707106769, y: -2.10734274e-08, z: .707106769, w: -4.21468549e-08}
         length: .0689359903
         modified: 1
     - boneName: char_robotGuard_RightToeBase
@@ -374,8 +343,6 @@ ModelImporter:
         min: {x: 0, y: 0, z: -50}
         max: {x: 0, y: 0, z: 50}
         value: {x: .0551488064, y: 0, z: .0275744032}
-        preQ: {x: -0, y: -0, z: -.321439356, w: .94693011}
-        postQ: {x: -1.69891106e-08, y: -0, z: -5.41767875e-09, w: .99999994}
         length: .0689360276
         modified: 1
     - boneName: char_robotGuard_LeftHandThumb1
@@ -384,8 +351,6 @@ ModelImporter:
         min: {x: 0, y: -25, z: -20}
         max: {x: 0, y: 25, z: 20}
         value: {x: .0231402591, y: 0, z: .0115701295}
-        preQ: {x: .289067686, y: .654446363, z: .559256136, w: -.418774694}
-        postQ: {x: -.0401109196, y: .948471129, z: .312823832, w: .0305740964}
         length: .0289253332
         modified: 1
     - boneName: char_robotGuard_LeftHandThumb2
@@ -394,8 +359,6 @@ ModelImporter:
         min: {x: 0, y: 0, z: -40}
         max: {x: 0, y: 0, z: 35}
         value: {x: .0173551943, y: 0, z: .00867759716}
-        preQ: {x: -.224950418, y: .924661696, z: .293271244, w: .0915971026}
-        postQ: {x: .175355241, y: .664243281, z: .66865778, w: -.284478515}
         length: .0216940008
         modified: 1
     - boneName: char_robotGuard_LeftHandIndex1
@@ -404,8 +367,6 @@ ModelImporter:
         min: {x: 0, y: -20, z: -50}
         max: {x: 0, y: 20, z: 50}
         value: {x: .0324267857, y: 0, z: .0162133928}
-        preQ: {x: .0984512046, y: .0318549797, z: .956249237, w: -.273641914}
-        postQ: {x: 2.68861186e-07, y: .0631706342, z: .998002708, w: -4.16239391e-06}
         length: .0405335017
         modified: 1
     - boneName: char_robotGuard_LeftHandIndex2
@@ -414,8 +375,6 @@ ModelImporter:
         min: {x: 0, y: 0, z: -45}
         max: {x: 0, y: 0, z: 45}
         value: {x: .0183558594, y: 0, z: .00917792972}
-        preQ: {x: .0195541009, y: .0431686677, z: .945226967, w: -.322955251}
-        postQ: {x: 2.03377581e-07, y: .0633082092, z: .997993946, w: 4.9528644e-06}
         length: .0229448322
         modified: 1
     - boneName: char_robotGuard_LeftHandIndex3
@@ -424,8 +383,6 @@ ModelImporter:
         min: {x: 0, y: 0, z: -45}
         max: {x: 0, y: 0, z: 45}
         value: {x: .013766896, y: 0, z: .00688344799}
-        preQ: {x: .0198123697, y: .0437743627, z: .948762059, w: -.312316746}
-        postQ: {x: -.00119669118, y: .052293323, z: .998369575, w: -.0228470843}
         length: .0172086246
         modified: 1
     - boneName: char_robotGuard_LeftHandMiddle1
@@ -434,8 +391,6 @@ ModelImporter:
         min: {x: 0, y: -7.50000048, z: -50}
         max: {x: 0, y: 7.50000048, z: 50}
         value: {x: .0352425799, y: 0, z: .0176212899}
-        preQ: {x: .0602281876, y: .0329465382, z: .958627582, w: -.276261359}
-        postQ: {x: -2.82248919e-07, y: .0631851032, z: .998001754, w: -9.28544341e-06}
         length: .0440532416
         modified: 1
     - boneName: char_robotGuard_LeftHandMiddle2
@@ -444,8 +399,6 @@ ModelImporter:
         min: {x: 0, y: 0, z: -45}
         max: {x: 0, y: 0, z: 45}
         value: {x: .019946022, y: 0, z: .00997301098}
-        preQ: {x: .0195748713, y: .0431183241, z: .945519269, w: -.322103709}
-        postQ: {x: 2.69035809e-07, y: .0633032173, z: .997994304, w: 5.54153121e-06}
         length: .0249325372
         modified: 1
     - boneName: char_robotGuard_LeftHandMiddle3
@@ -454,8 +407,6 @@ ModelImporter:
         min: {x: 0, y: 0, z: -45}
         max: {x: 0, y: 0, z: 45}
         value: {x: .0149595197, y: 0, z: .00747975986}
-        preQ: {x: .0198105276, y: .0436707996, z: .948768735, w: -.312311053}
-        postQ: {x: -.00110228336, y: .0523509607, z: .998406768, w: -.0210234914}
         length: .0186994039
         modified: 1
     - boneName: char_robotGuard_LeftHandRing1
@@ -464,8 +415,6 @@ ModelImporter:
         min: {x: 0, y: -7.50000048, z: -50}
         max: {x: 0, y: 7.50000048, z: 50}
         value: {x: .0306658018, y: 0, z: .0153329009}
-        preQ: {x: -.0158127919, y: .0352064557, z: .959079742, w: -.28049311}
-        postQ: {x: 2.58558401e-07, y: .0631601587, z: .998003364, w: 5.37114147e-06}
         length: .0383322611
         modified: 1
     - boneName: char_robotGuard_LeftHandRing2
@@ -474,8 +423,6 @@ ModelImporter:
         min: {x: 0, y: 0, z: -45}
         max: {x: 0, y: 0, z: 45}
         value: {x: .0173608866, y: 0, z: .00868044328}
-        preQ: {x: .0195390917, y: .0432004258, z: .94501102, w: -.323583126}
-        postQ: {x: 1.71945416e-07, y: .0633115396, z: .997993767, w: -1.11393101e-05}
         length: .021701118
         modified: 1
     - boneName: char_robotGuard_LeftHandRing3
@@ -484,8 +431,6 @@ ModelImporter:
         min: {x: 0, y: 0, z: -45}
         max: {x: 0, y: 0, z: 45}
         value: {x: .0130206672, y: 0, z: .00651033362}
-        preQ: {x: .0198138617, y: .0438450277, z: .948752582, w: -.312335461}
-        postQ: {x: -.00126456912, y: .0522508658, z: .998340428, w: -.0241742041}
         length: .016275838
         modified: 1
     - boneName: char_robotGuard_LeftHandPinky1
@@ -494,8 +439,6 @@ ModelImporter:
         min: {x: 0, y: -20, z: -50}
         max: {x: 0, y: 20, z: 50}
         value: {x: .0244131591, y: 0, z: .0122065796}
-        preQ: {x: -.0531667843, y: .0364245102, z: .957216024, w: -.282105923}
-        postQ: {x: -1.19098695e-06, y: .0631084964, z: .998006642, w: -1.18844919e-05}
         length: .0305164587
         modified: 1
     - boneName: char_robotGuard_LeftHandPinky2
@@ -504,8 +447,6 @@ ModelImporter:
         min: {x: 0, y: 0, z: -45}
         max: {x: 0, y: 0, z: 45}
         value: {x: .0138262911, y: 0, z: .00691314554}
-        preQ: {x: .019469846, y: .0433633961, z: .944014013, w: -.326462895}
-        postQ: {x: 3.70666413e-07, y: .0633431971, z: .997991741, w: -9.58874989e-06}
         length: .0172828678
         modified: 1
     - boneName: char_robotGuard_LeftHandPinky3
@@ -514,8 +455,6 @@ ModelImporter:
         min: {x: 0, y: 0, z: -45}
         max: {x: 0, y: 0, z: 45}
         value: {x: .0103697171, y: 0, z: .00518485857}
-        preQ: {x: .0198249891, y: .0441977903, z: .948731184, w: -.312350005}
-        postQ: {x: -.001582294, y: .0520600043, z: .998181283, w: -.0303530619}
         length: .0129621513
         modified: 1
     - boneName: char_robotGuard_RightHandThumb1
@@ -524,8 +463,6 @@ ModelImporter:
         min: {x: 0, y: -25, z: -20}
         max: {x: 0, y: 25, z: 20}
         value: {x: .0231409427, y: 0, z: .0115704713}
-        preQ: {x: .560795069, y: .419134617, z: -.300499171, w: .64771539}
-        postQ: {x: -.312821388, y: .0305784196, z: -.0401158631, w: -.948471606}
         length: .0289261863
         modified: 1
     - boneName: char_robotGuard_RightHandThumb2
@@ -534,8 +471,6 @@ ModelImporter:
         min: {x: 0, y: 0, z: -40}
         max: {x: 0, y: 0, z: 35}
         value: {x: .0173557047, y: 0, z: .00867785234}
-        preQ: {x: .293268055, y: -.0916008428, z: .224955365, w: .92466116}
-        postQ: {x: -.17008689, y: .0426842086, z: .287328809, w: -.941642523}
         length: .0216946397
         modified: 1
     - boneName: char_robotGuard_RightHandIndex1
@@ -544,8 +479,6 @@ ModelImporter:
         min: {x: 0, y: -20, z: -50}
         max: {x: 0, y: 20, z: 50}
         value: {x: .0324271657, y: 0, z: .0162135828}
-        preQ: {x: .957982004, y: .264471948, z: -.107341588, w: .0283324849}
-        postQ: {x: -.998002708, y: 4.87085799e-06, z: 1.51130371e-06, w: -.0631711558}
         length: .0405339748
         modified: 1
     - boneName: char_robotGuard_RightHandIndex2
@@ -554,8 +487,6 @@ ModelImporter:
         min: {x: 0, y: 0, z: -45}
         max: {x: 0, y: 0, z: 45}
         value: {x: .0183553975, y: 0, z: .00917769875}
-        preQ: {x: .945225358, y: .3229599, z: -.0195556302, w: .0431676023}
-        postQ: {x: -.997993886, y: 1.57706381e-08, z: 1.8462307e-06, w: -.0633079484}
         length: .0229442567
         modified: 1
     - boneName: char_robotGuard_RightHandIndex3
@@ -564,8 +495,6 @@ ModelImporter:
         min: {x: 0, y: 0, z: -45}
         max: {x: 0, y: 0, z: 45}
         value: {x: .0137665505, y: 0, z: .00688327523}
-        preQ: {x: .948760569, y: .312321335, z: -.0198139194, w: .0437732413}
-        postQ: {x: -.998369515, y: -.0228520632, z: -.00119511387, w: -.0522930622}
         length: .0172081925
         modified: 1
     - boneName: char_robotGuard_RightHandMiddle1
@@ -574,8 +503,6 @@ ModelImporter:
         min: {x: 0, y: -7.50000048, z: -50}
         max: {x: 0, y: 7.50000048, z: 50}
         value: {x: .0352427028, y: 0, z: .0176213514}
-        preQ: {x: .960729778, y: .267074317, z: -.0691574737, w: .0297782328}
-        postQ: {x: -.998001814, y: -1.4386952e-05, z: -8.69040306e-08, w: -.0631855205}
         length: .0440533981
         modified: 1
     - boneName: char_robotGuard_RightHandMiddle2
@@ -584,8 +511,6 @@ ModelImporter:
         min: {x: 0, y: 0, z: -45}
         max: {x: 0, y: 0, z: 45}
         value: {x: .0199455228, y: 0, z: .00997276139}
-        preQ: {x: .945520282, y: .322100461, z: -.0195738561, w: .0431212783}
-        postQ: {x: -.997994244, y: 8.91162745e-06, z: -1.03574712e-06, w: -.0633040816}
         length: .0249319114
         modified: 1
     - boneName: char_robotGuard_RightHandMiddle3
@@ -594,8 +519,6 @@ ModelImporter:
         min: {x: 0, y: 0, z: -45}
         max: {x: 0, y: 0, z: 45}
         value: {x: .0149591444, y: 0, z: .0074795722}
-        preQ: {x: .948769629, y: .312307924, z: -.0198095068, w: .043673683}
-        postQ: {x: -.998406768, y: -.0210199673, z: -.00110351597, w: -.0523518175}
         length: .0186989345
         modified: 1
     - boneName: char_robotGuard_RightHandRing1
@@ -604,8 +527,6 @@ ModelImporter:
         min: {x: 0, y: -7.50000048, z: -50}
         max: {x: 0, y: 7.50000048, z: 50}
         value: {x: .0306666102, y: 0, z: .0153333051}
-        preQ: {x: .961908579, y: .271315902, z: .00685353158, w: .032749299}
-        postQ: {x: -.998003304, y: 6.27386316e-06, z: -4.58152471e-07, w: -.0631606504}
         length: .0383332707
         modified: 1
     - boneName: char_robotGuard_RightHandRing2
@@ -614,8 +535,6 @@ ModelImporter:
         min: {x: 0, y: 0, z: -45}
         max: {x: 0, y: 0, z: 45}
         value: {x: .0173603408, y: 0, z: .0086801704}
-        preQ: {x: .945004284, y: .323602796, z: -.0195409022, w: .0432004109}
-        postQ: {x: -.997993767, y: -3.18295824e-05, z: 2.04064395e-06, w: -.0633108839}
         length: .0217004344
         modified: 1
     - boneName: char_robotGuard_RightHandRing3
@@ -624,8 +543,6 @@ ModelImporter:
         min: {x: 0, y: 0, z: -45}
         max: {x: 0, y: 0, z: 45}
         value: {x: .0130202575, y: 0, z: .00651012873}
-        preQ: {x: .948746085, y: .312355131, z: -.0198157765, w: .0438449234}
-        postQ: {x: -.99834007, y: -.0241949782, z: -.00126295874, w: -.0522503108}
         length: .0162753258
         modified: 1
     - boneName: char_robotGuard_RightHandPinky1
@@ -634,8 +551,6 @@ ModelImporter:
         min: {x: 0, y: -20, z: -50}
         max: {x: 0, y: 20, z: 50}
         value: {x: .0244135857, y: 0, z: .0122067928}
-        preQ: {x: .960396945, y: .272956103, z: .0442084111, w: .034321662}
-        postQ: {x: -.998006582, y: -1.19018414e-05, z: -6.09899814e-07, w: -.0631088838}
         length: .0305169914
         modified: 1
     - boneName: char_robotGuard_RightHandPinky2
@@ -644,8 +559,6 @@ ModelImporter:
         min: {x: 0, y: 0, z: -45}
         max: {x: 0, y: 0, z: 45}
         value: {x: .0138255982, y: 0, z: .00691279909}
-        preQ: {x: .94401902, y: .326448023, z: -.0194691978, w: .0433653444}
-        postQ: {x: -.997991681, y: 6.16599755e-06, z: -3.70433554e-07, w: -.0633443967}
         length: .0172820017
         modified: 1
     - boneName: char_robotGuard_RightHandPinky3
@@ -654,8 +567,6 @@ ModelImporter:
         min: {x: 0, y: 0, z: -45}
         max: {x: 0, y: 0, z: 45}
         value: {x: .0103691975, y: 0, z: .00518459873}
-        preQ: {x: .948736131, y: .312335074, z: -.0198244099, w: .0441997238}
-        postQ: {x: -.998181701, y: -.030337289, z: -.00158291205, w: -.0520611554}
         length: .0129615013
         modified: 1
     skeleton:
@@ -914,7 +825,6 @@ ModelImporter:
       rotation: {x: .122744903, y: -.0850149244, z: .318449587, w: .936106801}
       scale: {x: .99999994, y: 1, z: .99999994}
       transformModified: 1
-    handles: []
     armTwist: .5
     foreArmTwist: .5
     upperLegTwist: .5
@@ -924,6 +834,6 @@ ModelImporter:
     feetSpacing: 0
     rootMotionBoneName: 
   lastHumanDescriptionAvatarSource: {instanceID: 0}
-  additionalBone: 1
   animationType: 3
+  additionalBone: 1
   userData: 
