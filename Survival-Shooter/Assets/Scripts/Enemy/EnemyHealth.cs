@@ -43,7 +43,7 @@ public class EnemyHealth : MonoBehaviour
             return;
 
         enemyAudio.Play();
-
+	
         currentHealth -= amount;
             
         hitParticles.transform.position = hitPoint;
