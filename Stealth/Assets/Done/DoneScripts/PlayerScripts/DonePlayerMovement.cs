@@ -11,7 +11,6 @@ public class DonePlayerMovement : MonoBehaviour
 	private Animator anim;				// Reference to the animator component.
 	private DoneHashIDs hash;			// Reference to the HashIDs.
 	
-	
 	void Awake ()
 	{
 		// Setting up the references.
@@ -65,7 +64,8 @@ public class DonePlayerMovement : MonoBehaviour
 	
 	
 	void Rotating (float horizontal, float vertical)
-	{
+	{ 
+
 		// Create a new vector of the horizontal and vertical inputs.
 		Vector3 targetDirection = new Vector3(horizontal, 0f, vertical);
 		
@@ -77,7 +77,20 @@ public class DonePlayerMovement : MonoBehaviour
 		
 		// Change the players rotation to this new rotation.
 		rigidbody.MoveRotation(newRotation);
-	}
+		
+		// Ray camRay = Camera.main.ScreenPointToRay(Input.mousePosition);
+		
+		// RaycastHit floorHit;
+		
+		// if (Physics.Raycast(camRay, out floorHit, camRayLength, floorMask))
+		// {
+		// 	Vector3 playerToMouse = floorHit.point - transform.position;
+		// 	playerToMouse.y = 0f;
+			
+		// 	Quaternion newRotation = Quaternion.LookRotation(playerToMouse);
+		// 	playerRigidbody.MoveRotation(newRotation);
+		// }
+}
 	
 	
 	void AudioManagement (bool shout)

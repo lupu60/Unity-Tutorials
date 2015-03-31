@@ -16056,6 +16056,71 @@ MeshFilter:
   m_PrefabInternal: {fileID: 1034634540}
   m_GameObject: {fileID: 592679151}
   m_Mesh: {fileID: 4300542, guid: 8a2d23da643cb0d4a9ca6c6f1fffa66b, type: 3}
+--- !u!1 &592727298
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 592727301}
+  - 132: {fileID: 592727300}
+  - 114: {fileID: 592727299}
+  m_Layer: 0
+  m_Name: gui_text_dinamc
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &592727299
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 592727298}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 36c10a5e11cb5c941ad0f17733ecbce2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  time: 180
+  score: 0
+--- !u!132 &592727300
+GUIText:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 592727298}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Text: 
+  m_Anchor: 0
+  m_Alignment: 0
+  m_PixelOffset: {x: 0, y: 0}
+  m_LineSpacing: 1
+  m_TabSize: 4
+  m_Font: {fileID: 12800000, guid: d97d49edb97a64c45a42a117dbff0851, type: 3}
+  m_Material: {fileID: 0}
+  m_FontSize: 0
+  m_FontStyle: 0
+  m_Color:
+    serializedVersion: 2
+    rgba: 4294967295
+  m_PixelCorrect: 1
+  m_RichText: 1
+--- !u!4 &592727301
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 592727298}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: .0149999997, y: 1, z: 1}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 36
 --- !u!1 &594957803
 GameObject:
   m_ObjectHideFlags: 0
@@ -24400,7 +24465,6 @@ GameObject:
   m_Component:
   - 4: {fileID: 890788057}
   - 64: {fileID: 890788059}
-  - 114: {fileID: 890788058}
   m_Layer: 8
   m_Name: env_stealth_static
   m_TagString: Untagged
@@ -24429,17 +24493,6 @@ Transform:
   - {fileID: 1978588587}
   m_Father: {fileID: 0}
   m_RootOrder: 30
---- !u!114 &890788058
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 890788056}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: beb59c1604844764caf4289faa1d64af, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!64 &890788059
 MeshCollider:
   m_ObjectHideFlags: 0

@@ -94,5 +94,7 @@ public class DonePlayerHealth : MonoBehaviour
     {
 		// Decrement the player's health by amount.
         health -= amount;
+		//decrese score
+		guiTextDinamic.score -= 10;
     }
 }
