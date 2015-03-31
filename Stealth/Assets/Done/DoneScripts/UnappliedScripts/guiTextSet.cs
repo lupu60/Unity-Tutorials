@@ -7,10 +7,4 @@ public class guiTextSet : MonoBehaviour {
 		guiText.text = "\nArrow Keys: Move\nLeft Shift: Sneak\nZ: Use Switch\nX: Attract Attention\nF1: MainCamera\nF2: FpsCamera";
 	
 	}
-
-	void Update(){
-
-
-	}
-
 }
