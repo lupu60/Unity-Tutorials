@@ -4,7 +4,7 @@ using System.Collections;
 public class DonePlayerHealth : MonoBehaviour
 {
     public float health = 100f;							// How much health the player has left.
-	public float resetAfterDeathTime = 5f;				// How much time from the player dying to the level reseting.
+	public float resetAfterDeathTime = 10f;				// How much time from the player dying to the level reseting.
 	public AudioClip deathClip;							// The sound effect of the player dying.
 	
 	
@@ -15,7 +15,7 @@ public class DonePlayerHealth : MonoBehaviour
 	private DoneLastPlayerSighting lastPlayerSighting;	// Reference to the LastPlayerSighting script.
 	private float timer;								// A timer for counting to the reset of the level once the player is dead.
 	private bool playerDead;							// A bool to show if the player is dead or not.
-	
+
 	
 	void Awake ()
 	{
@@ -78,8 +78,10 @@ public class DonePlayerHealth : MonoBehaviour
 	}
 	
 	
-	void LevelReset ()
+	public void LevelReset ()
 	{
+		//show score end
+
 		// Increment the timer.
 		timer += Time.deltaTime;
 		
@@ -87,6 +89,7 @@ public class DonePlayerHealth : MonoBehaviour
 		if(timer >= resetAfterDeathTime)
 			// ... reset the level.
 			sceneFadeInOut.EndScene();
+		Debug.LogWarning ("mata");
 	}
 	
 	

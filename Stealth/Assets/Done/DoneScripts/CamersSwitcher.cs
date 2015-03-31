@@ -4,6 +4,7 @@ using System.Collections;
 public class CamersSwitcher : MonoBehaviour {
 	public Camera MainCam;
 	public Camera FpsCam;
+	public GameObject player;
 	// Use this for initialization
 	void Start () {
 		MainCam.camera.enabled = true;
@@ -19,6 +20,11 @@ public class CamersSwitcher : MonoBehaviour {
 		if (Input.GetKeyDown (KeyCode.F2)) {
 			MainCam.camera.enabled = false;
 			FpsCam.camera.enabled = true;
+			//Destroy(player.GetComponents(DonePlayerMovement));
+			//Destroy(player.GetComponent<DonePlayerMovement>());
+			//player.AddComponent("CharacterMotor");
+			//player.AddComponent("FPSInputController");
+
 		}
 	}
 }

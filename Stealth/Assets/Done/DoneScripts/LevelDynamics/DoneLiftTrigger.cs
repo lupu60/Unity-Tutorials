@@ -55,10 +55,11 @@ public class DoneLiftTrigger : MonoBehaviour
 	void Update ()
 	{
 		// If the player is in the lift...
-		if(playerInLift)
+		if (playerInLift) {
 			// ... activate the lift.
-			LiftActivation();
-		
+			LiftActivation ();
+			Debug.LogWarning ("mata");
+		}
 		// If the timer is less than the time before the doors close...
 		if(timer < timeToDoorsClose)
 			// ... the inner doors should follow the outer doors.
