@@ -10,7 +10,9 @@ public class DonePlayerMovement : MonoBehaviour
 	
 	private Animator anim;				// Reference to the animator component.
 	private DoneHashIDs hash;			// Reference to the HashIDs.
-	
+
+
+
 	void Awake ()
 	{
 		// Setting up the references.
@@ -75,7 +77,7 @@ public class DonePlayerMovement : MonoBehaviour
 			// Otherwise set the speed parameter to 0.
 			anim.SetFloat(hash.speedFloat, 0);
 	}
-	
+
 	
 	void Rotating (float horizontal, float vertical)
 	{ 

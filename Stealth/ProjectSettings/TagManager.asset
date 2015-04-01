@@ -9,8 +9,12 @@ TagManager:
   - Fader
   - WayPoint
   - Siren
-  - 
+  - Find
   - Alarm
+  - 
+  - PickUp
+  - 
+  - 
   - 
   Builtin Layer 0: Default
   Builtin Layer 1: TransparentFX

@@ -19,7 +19,7 @@ public class DoneEnemyAI : MonoBehaviour
 	private float patrolTimer;								// A timer for the patrolWaitTime.
 	private int wayPointIndex;								// A counter for the way point array.
 	
-	
+	public GameObject ethan;		
 	void Awake ()
 	{
 		// Setting up the references.
@@ -122,4 +122,14 @@ public class DoneEnemyAI : MonoBehaviour
 		// Set the destination to the patrolWayPoint.
 		nav.destination = patrolWayPoints[wayPointIndex].position;
 	}
+	void OnTriggerEnter (Collider other)
+	{	
+		// If the colliding gameobject is the player...
+		if(other.gameObject == ethan)
+		{	
+			guiTextDinamic.score-=100;
+		}
+	}
+	
+
 }
