@@ -11,7 +11,7 @@ public class EndScore : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-		guiText.text = "\nScore: " + guiTextDinamic.score;
+		guiText.text = "\nSCORE: " + guiTextDinamic.score;
 	}
 
 }

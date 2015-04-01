@@ -16,15 +16,12 @@ public class CamersSwitcher : MonoBehaviour {
 		if (Input.GetKeyDown (KeyCode.F1)) {
 			MainCam.camera.enabled = true;
 			FpsCam.camera.enabled = false;
+			Destroy(player.GetComponent<MouseLook>());
 		}
 		if (Input.GetKeyDown (KeyCode.F2)) {
 			MainCam.camera.enabled = false;
 			FpsCam.camera.enabled = true;
-			//Destroy(player.GetComponents(DonePlayerMovement));
-			//Destroy(player.GetComponent<DonePlayerMovement>());
-			//player.AddComponent("CharacterMotor");
-			//player.AddComponent("FPSInputController");
-
+			player.AddComponent<MouseLook>();
 		}
 	}
 }

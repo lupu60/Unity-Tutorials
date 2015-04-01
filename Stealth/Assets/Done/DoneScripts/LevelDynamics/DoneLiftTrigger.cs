@@ -17,7 +17,8 @@ public class DoneLiftTrigger : MonoBehaviour
 	private DoneLiftDoorsTracking liftDoorsTracking;	// Reference to LiftDoorsTracking script.
 	private bool playerInLift;							// Whether the player is in the lift or not.
 	private float timer;								// Timer to determine when the lift moves and when the level ends.
-	
+	public GameObject congratulation;
+	public GameObject endscore;
 	
 	void Awake ()
 	{
@@ -58,7 +59,8 @@ public class DoneLiftTrigger : MonoBehaviour
 		if (playerInLift) {
 			// ... activate the lift.
 			LiftActivation ();
-			Debug.LogWarning ("mata");
+			congratulation.SetActive(true);
+			endscore.SetActive (true);
 		}
 		// If the timer is less than the time before the doors close...
 		if(timer < timeToDoorsClose)

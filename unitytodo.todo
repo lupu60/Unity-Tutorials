@@ -8,9 +8,10 @@
    ✔ show nr points on the display  @done (15-03-31 15:15)
    ✔ show fps on the display @done (15-03-30 16:01)
    ✔ timer at the start of the game  @done (15-03-31 14:18)
-   ☐ at the end of the game show score banner
+   ✔ at the end of the game show score banner @done (15-04-01 14:35)
      LevelDynamics/DoneLiftTrigger/Line 58
      PlayerScripts/DonePlayerHealth/ Line 81
    ☐ add gun si freez la non players
+   ☐ add pickup objects and getpoints
    ☐ un patrat pe jos si daca calca pe ala incepe populara si danseaza 
    ☐ adaptarea la cate puncte +/- 

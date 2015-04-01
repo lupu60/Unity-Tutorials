@@ -15,8 +15,8 @@ public class DonePlayerHealth : MonoBehaviour
 	private DoneLastPlayerSighting lastPlayerSighting;	// Reference to the LastPlayerSighting script.
 	private float timer;								// A timer for counting to the reset of the level once the player is dead.
 	private bool playerDead;							// A bool to show if the player is dead or not.
-
-	
+	public GameObject gameover;
+	public GameObject endscore;
 	void Awake ()
 	{
 		// Setting up the references.
@@ -81,15 +81,16 @@ public class DonePlayerHealth : MonoBehaviour
 	public void LevelReset ()
 	{
 		//show score end
-
+		gameover.SetActive (true);
+		endscore.SetActive (true);
 		// Increment the timer.
 		timer += Time.deltaTime;
 		
 		//If the timer is greater than or equal to the time before the level resets...
-		if(timer >= resetAfterDeathTime)
+		if (timer >= resetAfterDeathTime) 
 			// ... reset the level.
-			sceneFadeInOut.EndScene();
-		Debug.LogWarning ("mata");
+			sceneFadeInOut.EndScene ();
+		
 	}
 	
 	
