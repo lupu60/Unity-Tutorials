@@ -20,8 +20,12 @@ public class DonePlayerMovement : MonoBehaviour
 		// Set the weight of the shouting layer to 1.
 		anim.SetLayerWeight(1, 1f);
 	}
-	
-	
+
+	void OnTriggerEnter(Collider other) {
+		if (other.gameObject.tag == "PickUp") {
+			other.gameObject.SetActive(false);
+		}
+	}
 	void FixedUpdate ()
 	{
 		// Cache the inputs.
@@ -31,7 +35,7 @@ public class DonePlayerMovement : MonoBehaviour
 		
 		MovementManagement(h, v, sneak);
 	}
-	
+
 	
 	void Update ()
 	{
@@ -91,8 +95,7 @@ public class DonePlayerMovement : MonoBehaviour
 		// 	playerRigidbody.MoveRotation(newRotation);
 		// }
 }
-	
-	
+
 	void AudioManagement (bool shout)
 	{
 		// If the player is currently in the run state...
