@@ -39,6 +39,12 @@ public class DonePlayerMovement : MonoBehaviour
 	
 	void Update ()
 	{
+		if (PartyTime.dancing == true) {
+			anim.SetBool("Dancing",true);
+		}
+		else{
+			anim.SetBool("Dancing",false);
+		}
 		// Cache the attention attracting input.
 		bool shout = Input.GetButtonDown("Attract");
 		
