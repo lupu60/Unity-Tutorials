@@ -419,7 +419,7 @@ Transition:
   - m_ConditionMode: 2
     m_ConditionEvent: Dancing
     m_EventTreshold: 0
-    m_ExitTime: .979224384
+    m_ExitTime: .980000019
   m_Atomic: 1
   m_Solo: 0
   m_Mute: 0

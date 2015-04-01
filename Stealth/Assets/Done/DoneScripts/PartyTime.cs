@@ -5,6 +5,7 @@ using System.Collections;
 public class PartyTime : MonoBehaviour {
 	private GameObject player;		 
 	public GameObject eff;
+	public GameObject light;
 	public static bool dancing = false;
 	// Use this for initialization
 
@@ -21,9 +22,6 @@ public class PartyTime : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
 		if (Input.GetKeyDown(KeyCode.P)) {
-			dancing = true;
-		}
-		if (Input.GetKeyDown(KeyCode.O)) {
 			dancing = false;
 		}
 	}
@@ -35,6 +33,7 @@ public class PartyTime : MonoBehaviour {
 			// ... play the clip at the position of the key...
 			audio.Play();
 			guiTextDinamic.score+=100;
+			dancing = true;
 		}
 	}
 
@@ -43,6 +42,7 @@ public class PartyTime : MonoBehaviour {
 		if(other.gameObject == player)
 		{	eff.SetActive(false);
 			audio.Stop();
+			dancing = false;
 		}
 	}
 }

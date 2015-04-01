@@ -40,9 +40,9 @@ public class DonePlayerMovement : MonoBehaviour
 	void Update ()
 	{
 		if (PartyTime.dancing == true) {
-			anim.SetBool("Dancing",true);
-		}
-		else{
+			anim.SetBool ("Dancing", true);
+			StopDancing ();
+		} else {
 			anim.SetBool("Dancing",false);
 		}
 		// Cache the attention attracting input.
@@ -53,8 +53,12 @@ public class DonePlayerMovement : MonoBehaviour
 		
 		AudioManagement(shout);
 	}
-	
-	
+	IEnumerator StopDancing() {
+		Debug.LogWarning ("fds");
+		yield return new WaitForSeconds(5);
+		anim.SetBool("Dancing",false);
+		Debug.LogWarning ("fds");
+	}
 	void MovementManagement (float horizontal, float vertical, bool sneaking)
 	{
 		// Set the sneaking parameter to the sneak input.
