@@ -4,7 +4,7 @@ using System.Collections;
 
 public class guiTextDinamic : MonoBehaviour {
 	public static int score;
-	public int time=180;
+	public static int time=180;
 	private int secs;
 	private int mins;
 	private float deltaTime = 0.0f;
@@ -27,9 +27,7 @@ public class guiTextDinamic : MonoBehaviour {
 		//GuiTextUpdate
 		guiText.text ="\nFPS: " + string.Format("{0:0.0} ms ({1:0.} fps)", msec, fps) + "\nTime: " +string.Format("{0:00}:{1:00}", mins, secs) + "\nScore: "+score ;
 
-		if(Time.time>=180){
-			Debug.LogWarning ("GameOver");
-		}
+	
 	}
 	//Decrease time
 	IEnumerator UpdateTime()

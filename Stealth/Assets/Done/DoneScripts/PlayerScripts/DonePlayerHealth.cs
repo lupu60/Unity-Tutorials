@@ -30,6 +30,17 @@ public class DonePlayerHealth : MonoBehaviour
 	
     void Update ()
 	{
+		/*
+		if(Time.time>=5){
+			// ... and if the player is not yet dead...
+				guiTextDinamic.score = 180;
+				PlayerDying();
+
+				// Otherwise, if the player is dead, call the PlayerDead and LevelReset functions.
+				PlayerDead();
+				LevelReset();
+
+		}*/
 		// If health is less than or equal to 0...
 		if(health <= 0f)
 		{
@@ -78,11 +89,12 @@ public class DonePlayerHealth : MonoBehaviour
 	}
 	
 	
-	public void LevelReset ()
+	public  void LevelReset ()
 	{
 		//show score end
 		gameover.SetActive (true);
 		endscore.SetActive (true);
+		guiTextDinamic.score = 180;
 		// Increment the timer.
 		timer += Time.deltaTime;
 		
