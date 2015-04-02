@@ -20,6 +20,8 @@ public class DonePlayerMovement : MonoBehaviour
 		
 		// Set the weight of the shouting layer to 1.
 		anim.SetLayerWeight(1, 1f);
+		anim.SetLayerWeight(2, 2f);
+
 	}
 
 	void OnTriggerEnter(Collider other) {
