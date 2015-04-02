@@ -9,9 +9,11 @@ public class DonePlayerMovement : MonoBehaviour
 
 	private Animator anim;				// Reference to the animator component.
 	private DoneHashIDs hash;			// Reference to the HashIDs.
+	public GameObject grenade;
+	private GameObject grenadeClone;
+	private Vector3 throwSpeed = new Vector3(2, 16, 30); //This value is a sure basket
 
-
-
+	
 	void Awake ()
 	{
 		// Setting up the references.
@@ -21,7 +23,7 @@ public class DonePlayerMovement : MonoBehaviour
 		// Set the weight of the shouting layer to 1.
 		anim.SetLayerWeight(1, 1f);
 		anim.SetLayerWeight(2, 2f);
-
+		anim.SetLayerWeight(3, 3f);
 	}
 
 	void OnTriggerEnter(Collider other) {
@@ -44,9 +46,20 @@ public class DonePlayerMovement : MonoBehaviour
 	{	
 		if (PartyTime.dancing == true) {
 			anim.SetBool ("Dancing", true);
-			StopDancing ();
 		} else {
 			anim.SetBool("Dancing",false);
+		}
+		if (Input.GetMouseButtonDown(1)) {
+
+			anim.SetBool ("Throwing", true);
+			grenadeClone = Instantiate(grenade, transform.position, transform.rotation) as GameObject;
+			grenadeClone.rigidbody.AddForce(throwSpeed, ForceMode.Impulse);
+			FindTheBall.publicspeed = 6;
+
+		}
+		if (Input.GetMouseButtonUp(1)) {
+			anim.SetBool ("Throwing", false);
+			
 		}
 		// Cache the attention attracting input.
 		bool shout = Input.GetButtonDown("Attract");
@@ -55,10 +68,6 @@ public class DonePlayerMovement : MonoBehaviour
 		anim.SetBool(hash.shoutingBool, shout);
 		
 		AudioManagement(shout);
-	}
-	IEnumerator StopDancing() {
-		yield return new WaitForSeconds(5);
-		anim.SetBool("Dancing",false);
 	}
 	void MovementManagement (float horizontal, float vertical, bool sneaking)
 	{

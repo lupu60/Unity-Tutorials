@@ -4,7 +4,7 @@ using System.Collections;
 public class ManagerTimeScore : MonoBehaviour {
 	public static int score;
 	public static int time=180;
-	public static int grenade=3;
+	public static int grenade=0;
 	public GameObject guitext;
 	public GameObject EndScore;
 	private int sec;
