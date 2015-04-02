@@ -1,5 +1,7 @@
 ﻿using UnityEngine;
+using System;
 using System.Collections;
+using System.IO;
 
 public class ManagerTimeScore : MonoBehaviour {
 	public static int score;
@@ -10,12 +12,23 @@ public class ManagerTimeScore : MonoBehaviour {
 	private int sec;
 	private int min;
 	private float deltaTime = 0.0f;
+	//public static int [] hscore;
+	//private int  hscore1 = hscore[0];
 	// Use this for initialization
 	void Start () {
 		StartCoroutine(UpdateTime());
 		score = 0;	
+		//hscore= new int[10];
+
 	}
-	
+	/*
+	void int findmax(){
+		for (int i = 0; i < 11; i++)
+		{
+			if (hscore1 < hscore[i]) hscore1 = hscore[i];
+		}
+		return hscore1;
+	}*/
 	// Update is called once per frame
 	void Update () {
 	//Show fps
@@ -27,6 +40,7 @@ public class ManagerTimeScore : MonoBehaviour {
 		min = time / 60;
 		//GuiTextUpdate
 		guitext.guiText.text ="\nFPS: " + string.Format("{0:0.0} ms ({1:0.} fps)", msec, fps) + "\nTime: " +string.Format("{0:00}:{1:00}", min, sec) + "\nScore: "+score + "\nHandGrenade: "+grenade;
+
 		EndScore.guiText.text = "SCORE: " + score;
 	}
 		//Decrease time

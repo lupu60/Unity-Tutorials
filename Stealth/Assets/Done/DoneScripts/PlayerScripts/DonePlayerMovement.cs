@@ -50,11 +50,13 @@ public class DonePlayerMovement : MonoBehaviour
 			anim.SetBool("Dancing",false);
 		}
 		if (Input.GetMouseButtonDown(1)) {
-
+			if(ManagerTimeScore.grenade>0){
 			anim.SetBool ("Throwing", true);
 			grenadeClone = Instantiate(grenade, transform.position, transform.rotation) as GameObject;
 			grenadeClone.rigidbody.AddForce(throwSpeed, ForceMode.Impulse);
 			FindTheBall.publicspeed = 6;
+			ManagerTimeScore.grenade-=1;
+			}
 
 		}
 		if (Input.GetMouseButtonUp(1)) {
