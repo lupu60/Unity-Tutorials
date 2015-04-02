@@ -2,11 +2,14 @@
 using System.Collections;
 
 public class FindTheBall : MonoBehaviour {
-	Transform player;
+	public Transform target;
+	public  float speed;
+	public static float publicspeed;
+	Transform ball;
 	NavMeshAgent nav;
 	void Awake()
 	{
-		player = GameObject.FindGameObjectWithTag("Find").transform;
+		ball = GameObject.FindGameObjectWithTag("Find").transform;
 
 		nav = GetComponent <NavMeshAgent>();
 	}
@@ -17,6 +20,10 @@ public class FindTheBall : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-		nav.SetDestination(player.position);
+			speed = publicspeed;
+			float step = speed * Time.deltaTime;
+			transform.position = Vector3.MoveTowards (transform.position, target.position, step);
+			nav.SetDestination (ball.position);
+
 	}
 }

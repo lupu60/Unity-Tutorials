@@ -61,6 +61,17 @@ AnimatorController:
     m_IKPass: 0
     m_SyncedLayerAffectsTiming: 0
     m_Controller: {fileID: 9100000}
+  - serializedVersion: 3
+    m_Name: Dancing
+    m_StateMachine: {fileID: 110752564}
+    m_Mask: {fileID: 0}
+    m_BlendingMode: 0
+    m_SyncedLayerIndex: -1
+    m_StateMachineMotionSetIndex: 0
+    m_DefaultWeight: 0
+    m_IKPass: 0
+    m_SyncedLayerAffectsTiming: 0
+    m_Controller: {fileID: 9100000}
 --- !u!206 &20600000
 BlendTree:
   m_ObjectHideFlags: 1
@@ -176,6 +187,26 @@ Transition:
   m_Solo: 0
   m_Mute: 0
   m_CanTransitionToSelf: 1
+--- !u!1101 &110137622
+Transition:
+  serializedVersion: 2
+  m_ObjectHideFlags: 3
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_Name: 
+  m_SrcState: {fileID: 110238800}
+  m_DstState: {fileID: 110228028}
+  m_TransitionDuration: .0431034453
+  m_TransitionOffset: 0
+  m_Conditions:
+  - m_ConditionMode: 5
+    m_ConditionEvent: 
+    m_EventTreshold: 0
+    m_ExitTime: .956896544
+  m_Atomic: 1
+  m_Solo: 0
+  m_Mute: 0
+  m_CanTransitionToSelf: 0
 --- !u!1101 &110140420
 Transition:
   serializedVersion: 2
@@ -200,6 +231,26 @@ Transition:
   m_Solo: 0
   m_Mute: 0
   m_CanTransitionToSelf: 1
+--- !u!1101 &110141170
+Transition:
+  serializedVersion: 2
+  m_ObjectHideFlags: 3
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_Name: 
+  m_SrcState: {fileID: 110228028}
+  m_DstState: {fileID: 110238800}
+  m_TransitionDuration: .100000001
+  m_TransitionOffset: 0
+  m_Conditions:
+  - m_ConditionMode: 1
+    m_ConditionEvent: Dancing
+    m_EventTreshold: 0
+    m_ExitTime: .899999976
+  m_Atomic: 1
+  m_Solo: 0
+  m_Mute: 0
+  m_CanTransitionToSelf: 0
 --- !u!1101 &110141800
 Transition:
   serializedVersion: 2
@@ -216,26 +267,6 @@ Transition:
     m_ConditionEvent: 
     m_EventTreshold: 0
     m_ExitTime: .921052635
-  m_Atomic: 1
-  m_Solo: 0
-  m_Mute: 0
-  m_CanTransitionToSelf: 0
---- !u!1101 &110144248
-Transition:
-  serializedVersion: 2
-  m_ObjectHideFlags: 3
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_Name: 
-  m_SrcState: {fileID: 0}
-  m_DstState: {fileID: 110250258}
-  m_TransitionDuration: .100000001
-  m_TransitionOffset: 0
-  m_Conditions:
-  - m_ConditionMode: 1
-    m_ConditionEvent: Dancing
-    m_EventTreshold: 0
-    m_ExitTime: .899999976
   m_Atomic: 1
   m_Solo: 0
   m_Mute: 0
@@ -404,26 +435,6 @@ Transition:
   m_Solo: 0
   m_Mute: 0
   m_CanTransitionToSelf: 1
---- !u!1101 &110197332
-Transition:
-  serializedVersion: 2
-  m_ObjectHideFlags: 3
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_Name: 
-  m_SrcState: {fileID: 110250258}
-  m_DstState: {fileID: 110200000}
-  m_TransitionDuration: .0207756218
-  m_TransitionOffset: 0
-  m_Conditions:
-  - m_ConditionMode: 2
-    m_ConditionEvent: Dancing
-    m_EventTreshold: 0
-    m_ExitTime: .980000019
-  m_Atomic: 1
-  m_Solo: 0
-  m_Mute: 0
-  m_CanTransitionToSelf: 0
 --- !u!1101 &110198022
 Transition:
   serializedVersion: 2
@@ -459,6 +470,21 @@ State:
   m_IKOnFeet: 1
   m_Mirror: 0
   m_Tag: 
+--- !u!1102 &110209564
+State:
+  m_ObjectHideFlags: 3
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_Name: RapidStrafeInRightTurn_BWDNtrlShort
+  m_Speed: 1
+  m_CycleOffset: 0
+  m_Motions:
+  - {fileID: 7400000, guid: 241a29a48ccd9dd4792f892610f4dc67, type: 3}
+  m_ParentStateMachine: {fileID: 110752564}
+  m_Position: {x: 48, y: -156, z: 0}
+  m_IKOnFeet: 0
+  m_Mirror: 0
+  m_Tag: 
 --- !u!1102 &110215632
 State:
   m_ObjectHideFlags: 3
@@ -474,6 +500,36 @@ State:
   m_IKOnFeet: 1
   m_Mirror: 0
   m_Tag: 
+--- !u!1102 &110228028
+State:
+  m_ObjectHideFlags: 3
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_Name: Empty
+  m_Speed: 1
+  m_CycleOffset: 0
+  m_Motions:
+  - {fileID: 0}
+  m_ParentStateMachine: {fileID: 110752564}
+  m_Position: {x: 312, y: -24, z: 0}
+  m_IKOnFeet: 1
+  m_Mirror: 0
+  m_Tag: 
+--- !u!1102 &110238800
+State:
+  m_ObjectHideFlags: 3
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_Name: Stand_Winner-001
+  m_Speed: 1
+  m_CycleOffset: 0
+  m_Motions:
+  - {fileID: 7400000, guid: ab8fb059483475145bccbcb1d5fed69a, type: 3}
+  m_ParentStateMachine: {fileID: 110752564}
+  m_Position: {x: 354, y: -153, z: 0}
+  m_IKOnFeet: 0
+  m_Mirror: 0
+  m_Tag: 
 --- !u!1102 &110241654
 State:
   m_ObjectHideFlags: 3
@@ -486,21 +542,6 @@ State:
   - {fileID: 0}
   m_ParentStateMachine: {fileID: 0}
   m_Position: {x: 300, y: -132, z: 0}
-  m_IKOnFeet: 0
-  m_Mirror: 0
-  m_Tag: 
---- !u!1102 &110250258
-State:
-  m_ObjectHideFlags: 3
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_Name: RapidStrafeInRightTurn_BWDNtrlShort
-  m_Speed: 1
-  m_CycleOffset: 0
-  m_Motions:
-  - {fileID: 7400000, guid: 241a29a48ccd9dd4792f892610f4dc67, type: 3}
-  m_ParentStateMachine: {fileID: 110700000}
-  m_Position: {x: -81, y: 203, z: 0}
   m_IKOnFeet: 0
   m_Mirror: 0
   m_Tag: 
@@ -608,19 +649,13 @@ StateMachine:
   - {fileID: 110255755}
   - {fileID: 110284816}
   - {fileID: 110263371}
-  - {fileID: 110250258}
   m_ChildStateMachine: []
   m_ChildStateMachinePosition: []
   m_OrderedTransitions:
     data:
-      first: {fileID: 110250258}
-      second:
-      - {fileID: 110197332}
-    data:
       first: {fileID: 0}
       second:
       - {fileID: 110183225}
-      - {fileID: 110144248}
     data:
       first: {fileID: 110200000}
       second:
@@ -632,13 +667,13 @@ StateMachine:
       - {fileID: 110121422}
       - {fileID: 110191210}
     data:
+      first: {fileID: 110263371}
+      second: []
+    data:
       first: {fileID: 110284816}
       second:
       - {fileID: 110123219}
       - {fileID: 110149917}
-    data:
-      first: {fileID: 110263371}
-      second: []
   m_MotionSetCount: 1
   m_AnyStatePosition: {x: -276, y: 36, z: 0}
   m_ParentStateMachinePosition: {x: 800, y: 20, z: 0}
@@ -666,6 +701,32 @@ StateMachine:
       - {fileID: 110179553}
   m_MotionSetCount: 1
   m_AnyStatePosition: {x: -408, y: -12, z: 0}
+  m_ParentStateMachinePosition: {x: 800, y: 20, z: 0}
+--- !u!1107 &110752564
+StateMachine:
+  serializedVersion: 2
+  m_ObjectHideFlags: 3
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_Name: Dancing
+  m_DefaultState: {fileID: 110228028}
+  m_States:
+  - {fileID: 110228028}
+  - {fileID: 110209564}
+  - {fileID: 110238800}
+  m_ChildStateMachine: []
+  m_ChildStateMachinePosition: []
+  m_OrderedTransitions:
+    data:
+      first: {fileID: 110238800}
+      second:
+      - {fileID: 110137622}
+    data:
+      first: {fileID: 110228028}
+      second:
+      - {fileID: 110141170}
+  m_MotionSetCount: 1
+  m_AnyStatePosition: {x: 50, y: 20, z: 0}
   m_ParentStateMachinePosition: {x: 800, y: 20, z: 0}
 --- !u!1107 &110770268
 StateMachine:

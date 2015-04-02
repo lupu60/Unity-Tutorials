@@ -6,8 +6,7 @@ public class DonePlayerMovement : MonoBehaviour
 	public AudioClip shoutingClip;		// Audio clip of the player shouting.
 	public float turnSmoothing = 15f;	// A smoothing value for turning the player.
 	public float speedDampTime = 0.1f;	// The damping for the speed parameter
-	
-	
+
 	private Animator anim;				// Reference to the animator component.
 	private DoneHashIDs hash;			// Reference to the HashIDs.
 
@@ -40,7 +39,7 @@ public class DonePlayerMovement : MonoBehaviour
 
 	
 	void Update ()
-	{
+	{	
 		if (PartyTime.dancing == true) {
 			anim.SetBool ("Dancing", true);
 			StopDancing ();
