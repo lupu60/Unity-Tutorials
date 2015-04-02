@@ -94,7 +94,7 @@ public class DonePlayerHealth : MonoBehaviour
 		//show score end
 		gameover.SetActive (true);
 		endscore.SetActive (true);
-		guiTextDinamic.score = 180;
+		ManagerTimeScore.time = 180;
 		// Increment the timer.
 		timer += Time.deltaTime;
 		
@@ -111,6 +111,6 @@ public class DonePlayerHealth : MonoBehaviour
 		// Decrement the player's health by amount.
         health -= amount;
 		//decrese score
-		guiTextDinamic.score -= 10;
+		ManagerTimeScore.score -= 10;
     }
 }

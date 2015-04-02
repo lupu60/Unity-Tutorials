@@ -56,10 +56,8 @@ public class DonePlayerMovement : MonoBehaviour
 		AudioManagement(shout);
 	}
 	IEnumerator StopDancing() {
-		Debug.LogWarning ("fds");
 		yield return new WaitForSeconds(5);
 		anim.SetBool("Dancing",false);
-		Debug.LogWarning ("fds");
 	}
 	void MovementManagement (float horizontal, float vertical, bool sneaking)
 	{

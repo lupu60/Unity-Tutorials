@@ -5,7 +5,7 @@ using System.Collections;
 public class PartyTime : MonoBehaviour {
 	private GameObject player;		 
 	public GameObject eff;
-	public GameObject light;
+//	public GameObject light;
 	public static bool dancing = false;
 	// Use this for initialization
 
@@ -32,7 +32,7 @@ public class PartyTime : MonoBehaviour {
 		{	eff.SetActive(true);
 			// ... play the clip at the position of the key...
 			audio.Play();
-			guiTextDinamic.score+=100;
+			ManagerTimeScore.score+=100;
 			dancing = true;
 		}
 	}

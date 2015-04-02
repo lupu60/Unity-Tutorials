@@ -26,8 +26,8 @@ public class GrenadePickUp : MonoBehaviour {
 		{
 			// ... play the clip at the position of the key...
 			AudioSource.PlayClipAtPoint(keyGrab, transform.position);
-			guiTextDinamic.score+=50;
-
+			ManagerTimeScore.score+=50;
+			ManagerTimeScore.grenade+=1;
 			// ... and destroy this gameobject.
 			Destroy(gameObject);
 		}
